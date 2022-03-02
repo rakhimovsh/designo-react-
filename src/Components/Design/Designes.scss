@@ -1,0 +1,103 @@
+.designs-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.designs-section-container {
+  display: flex;
+  justify-content: space-between;
+}
+.designs {
+  width: 33.813rem;
+  height: 40rem;
+  background-image: url("../../Assets/Images/web-design.jpg");
+  background-size: cover;
+  border: transparent;
+  &__center {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  &--app {
+    width: 33.813rem;
+    height: 19.25rem;
+    background-image: url("../../Assets/Images/app-design.jpg");
+    background-size: cover;
+  }
+  &--graphic {
+    width: 33.813rem;
+    height: 19.25rem;
+    background-image: url("../../Assets/Images/graphic-design.jpg");
+    background-size: cover;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+  &__disc {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+.designs-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.designs:hover {
+  box-shadow: 640px 0 inset rgba(240, 111, 82, 0.6);
+  opacity: 0.5;
+}
+@media only screen and (max-width: 768px) {
+  .designs-section {
+    padding-top: 35px;
+  }
+  .designs-section-container {
+    flex-direction: column;
+  }
+  .designs {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    padding: 53px 0px;
+    max-width: auto;
+    border-radius: 15px;
+    background-image: url("../../Assets/Images/web-design-tablet.jpg");
+    background-repeat: no-repeat;
+    &--app {
+      background-image: url("../../Assets/Images/app-design-tablet.jpg");
+      background-repeat: no-repeat;
+    }
+    &--graphic {
+      background-image: url("../../Assets/Images/graphic-design-tablet.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+  .designs:hover {
+    box-shadow: 730px 0 inset rgba(240, 111, 82, 0.6);
+    opacity: 0.5;
+  }
+  .designs-right {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .designs {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__title {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    &__disc {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
